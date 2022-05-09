@@ -10,9 +10,6 @@
               label="Пошта"
               required
             ></v-text-field>
-            <div>
-              sdfsf
-            </div>
           </v-flex>
           <v-flex>
             <v-text-field
