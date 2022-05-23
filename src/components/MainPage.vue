@@ -89,6 +89,12 @@ export default {
       { image: "", text: "Book 7", link: ""},
       { image: "", text: "Book 8", link: ""},
       { image: "", text: "Book 9", link: ""},
+      { image: "", text: "Book 10", link: ""},
+      { image: "", text: "Book 11", link: ""},
+      { image: "", text: "Book 12", link: ""},
+      { image: "", text: "Book 13", link: ""},
+      { image: "", text: "Book 14", link: ""},
+      { image: "", text: "Book 15", link: ""},
     ]
   }),
 };
