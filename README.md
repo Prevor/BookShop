@@ -1,4 +1,4 @@
-# form_registration_authorization
+# BookShop
 
 ## Project setup
 ```
