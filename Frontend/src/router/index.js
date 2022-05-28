@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import MainPage from '../components/MainPage.vue'
 import FormRegistration from '../components/FormRegistration.vue'
 import FormAuthorization from '../components/FormAuthorization.vue'
+import ShowBook from '../components/ShowBook.vue'
+import MainPageCategory from '../components/MainPageCategory'
 
 Vue.use(VueRouter)
 
@@ -13,7 +15,7 @@ const routes = [{
     },
     {
 
-        path: '/',
+        path: '/registration',
         name: 'registration',
         component: FormRegistration
     },
@@ -22,6 +24,16 @@ const routes = [{
         name: 'authorization',
         component: FormAuthorization
     },
+    {
+        path: '/book/:url',
+        name: 'showBook',
+        component: ShowBook
+    },
+    {
+        path: '/books/category/:category',
+        name: 'category',
+        component: MainPageCategory
+    }
 ]
 
 const router = new VueRouter({

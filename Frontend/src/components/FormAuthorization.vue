@@ -1,10 +1,12 @@
 <template>
-  <v-img src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
-    <v-card width="500" class="mx-auto" ref="form">
-      <v-form v-model="valid" class="pa-10 mt-10">
+  <v-app class="grey darken-4">
+    <v-card width="500" class="mx-auto mt-15" ref="form">
+      <v-form v-model="valid" class="pa-10">
         <v-layout class="d-flex flex-column">
-          <v-flex xs12 class="ml-8">
+            <h2>Авторизація</h2>
+          <v-flex xs12 >
             <v-text-field
+               prepend-icon="mdi-email-outline"
               v-model="email"
               :rules="emailRules"
               label="Пошта"
@@ -25,17 +27,21 @@
             >
             </v-text-field>
           </v-flex>
-          <v-flex class="text-center">
-            <v-btn color="primary" dark> Вхід </v-btn>
+          <v-flex class="text-center ">
+            <v-btn color="orange black--text" dark> Вхід </v-btn>
           </v-flex>
           <v-flex class="text-center mt-5">
             <v-card-text>Обліковий запис відсутній?</v-card-text>
           </v-flex>
           <v-flex class="text-center">
-            <v-btn :to="{ name: 'registration' }"  v-on="submit" > Зареєструватись </v-btn>
+            <v-btn :to="{ name: 'registration' }" class="black--text"  v-on="submit"> Зареєструватись </v-btn>
           </v-flex>
         </v-layout>
       </v-form>
     </v-card>
-  </v-img>
+  </v-app>
 </template>
+<style>
+h2 {
+  text-align: center;
+}</style>
